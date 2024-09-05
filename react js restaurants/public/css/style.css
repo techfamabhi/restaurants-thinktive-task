@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.border-left {
+    border-left: 2px solid var(--primary) !important;
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.overlay {
+    background-color: rgb(0 0 0 / 45%);
+    z-index: 99;
+}
+
+/* sidebar for small screens */
+@media screen and (max-width: 767px) {
+
+    .sidebar {
+        max-width: 18rem;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-out;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    .add-ranch-btn{
+        margin-bottom: 280px;
+
+    }
+}
+
+
+.heading1{
+    margin-left: 75px;
+}
+.main-card-data{
+    border-radius: 10px;
+}
+.bg-color1{
+    background-color: #F0F3F4;
+}
+.button-left-right{
+    margin-left: 1px;
+    margin-right: 75px;
+}
+.button-color{
+    background-color: #FF8743;
+    color: #fff;
+    font-weight: 500;
+}
+.color1{
+    color: #4E96BE;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.message {
+    gap: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+  .circle {
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    background-color: #fa7bb4;
+    border-radius: 50%;
+    left: 19px;
+    top: 8px;
+  }
+  .dp {
+    height: 40px;
+    width: 40px;
+    background-color: #626262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .main-container {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 70px;
+    z-index: 1;
+  }
+  .dpicn {
+    height: 42px;
+  }
+
+  .icn {
+    height: 30px;
+  }
+
+  .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prof{
+    display: grid;
+    margin-left: -30px;
+}
+ 
+.profnav .btn{
+    border-radius: 50%;
+}
+
+.profnav .dropdown-menu{
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+.filter-icon{
+    font-size: 25px;
+}
